@@ -1,0 +1,44 @@
+<!-- your.component.html -->
+<div class="connt">
+<div class="main">
+  <div class="h1">Which Category you want ?</div>
+  <div class="up">
+  
+    <button class="card1" (click)="selectCategory('pizza')">
+      <img  style="height: 80px;" src="https://static.vecteezy.com/system/resources/previews/028/900/505/original/pizza-icon-design-free-png.png" alt="df">
+    </button>
+    <button class="card2" (click)="selectCategory('burger')">
+      <img  style="height: 80px;" src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png" alt="df">
+    </button>
+  </div>
+  <div class="down">
+    <button class="card3" (click)="selectCategory('tacos')">
+      <img  style="height: 80px;" src="https://cdn-icons-png.flaticon.com/512/8512/8512378.png" alt="df">
+    </button>
+    <button class="card4" (click)="selectCategory('hotdog')">
+      <img  style="height: 80px;" src="https://cdn-icons-png.flaticon.com/512/1256/1256450.png" alt="df">
+
+    </button>
+  </div>
+</div>
+
+<div *ngFor="let category of selectedCategories">
+  <h2>{{ category }}</h2>
+  <div class="container">
+    <div *ngFor="let snack of snacks | filterByCategory: category" class="card">
+      <div class="imgBx">
+        <img [src]="snack.picture" alt="{{ snack.description }} Image">
+      </div>
+      <div class="contentBx">
+        <h2>{{ snack.description }}</h2>
+        <div class="size"></div>
+        <div class="color">
+          <h3>Price:</h3>
+          <span>${{ snack.price }}</span>
+        </div>
+        <button class="btn" (click)="addtoOrder(snack)"> Choose </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

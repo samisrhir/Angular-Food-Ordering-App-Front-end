@@ -1,0 +1,12 @@
+<!-- order.component.html -->
+<div>
+  <h2>Order Details</h2>
+  <div *ngFor="let item of sharedService.selectedSnacks">
+    <div class="order-item">
+      <img  style="height: 20px;" [src]="item.picture" alt="{{ item.description }} Image">
+      <h1>{{ item.description }}</h1>
+      <h2>Price: ${{ item.price }}</h2>
+    </div>
+  </div>
+  <button (click)="placeOrder()">Place Order</button>
+</div>

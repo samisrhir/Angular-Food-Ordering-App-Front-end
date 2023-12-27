@@ -1,0 +1,61 @@
+
+@font-face {
+  font-family: 'stylee';
+  src: url('./Burger\ Free.ttf') format('truetype');
+}
+
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    background: radial-gradient(circle, rgb(155, 44, 13) 30%, rgb(247, 153, 0) 88%);
+    opacity: 0.5;
+
+    opacity: 1;
+    filter: alpha(opacity=80);
+    box-shadow: 0 0px 15px rgba(57, 10, 10, 0.06);
+    border-radius: 25px;
+    margin-left: 160px;
+    width: 90vw;
+    bottom: 400px;
+    margin-bottom: 15px;
+    position: relative; /* or absolute, depending on your layout needs */
+  top: 20px; /* move the element 20 pixels down */
+  right: 50px;
+  }
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  #navbar li {
+    list-style: none;
+    display: inline; /* Set to inline or inline-block */
+    margin-left: 300px;
+    position: sticky;
+  }
+  
+  #navbar li a {
+    cursor: pointer;
+    font-family: "stylee";
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #navbar li a:hover,
+  #navbar li a.active {
+    color: #000000;
+  }
+  
+
+  
