@@ -18,7 +18,7 @@ import { FilterByCategoryPipe } from './snack/filter-by-category.pipe';
     AppComponent,
     HeroComponent,
     SnackComponent,
-    NavbarComponent,OrderComponent  ],
+    NavbarComponent,OrderComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,HttpClientModule,FormsModule

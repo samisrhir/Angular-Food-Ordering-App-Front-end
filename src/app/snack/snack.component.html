@@ -1,42 +1,64 @@
-<!-- your.component.html -->
-<div class="connt">
-<div class="main">
-  <div class="h1">Which Category you want ?</div>
-  <div class="up">
+<!-- La classe "connt" semble être une faute de frappe, elle peut être changée en "content". -->
+<div class="content">
+
+  <div class="main">
+    <!-- Titre de la section -->
+    <div class="h1">Which Categoryis your Favorite Snack?</div>
+    <div class="h1" style="margin-left: 600px;margin-bottom:100px ; font-size: 1em;letter-spacing: 10px;">Choose the snack from below </div>
+
+    <!-- Composant Angular responsable de la gestion des commandes -->
+
+    <!-- Section des catégories -->
+    <div class="up">
+      <!-- Bouton pour sélectionner la catégorie "pizza" -->
+      <button class="card1" (click)="selectCategory('Pizza')">
+        <img style="height: 180px;margin-left: 50px;margin-top: 30px;" src="https://static.vecteezy.com/system/resources/thumbnails/024/589/232/small/pizza-with-ai-generated-free-png.png" alt="Pizza">
+      </button>
+
+      <!-- Bouton pour sélectionner la catégorie "burger" -->
+      <button class="card2" (click)="selectCategory('Burger')">
+        <img style="height: 260px;margin-left: -30px;margin-top: 30px;" src="https://png.pngtree.com/png-vector/20230417/ourmid/pngtree-food-toast-burger-png-image_6712843.png" alt="Burger">
+      </button>
+    </div>
+
+    <div class="down">
+      <!-- Bouton pour sélectionner la catégorie "tacos" -->
+      <button class="card3" (click)="selectCategory('tacos')">
+        <img style="height: 260px;margin-left: 20px;margin-top: -20px;" src="https://png.pngtree.com/png-clipart/20230422/ourmid/pngtree-mexican-taco-crepes-with-lemon-sauce-psd-transparent-png-image_6720528.png" alt="Tacos">
+      </button>
+
+      <!-- Bouton pour sélectionner la catégorie "hotdog" -->
+      <button class="card4" (click)="selectCategory('hotdog')">
+        <img style="height: 250px;margin-left: -10px;margin-top: -30px;" src="https://static.vecteezy.com/system/resources/previews/021/952/581/original/free-spicy-hot-dog-hot-dog-transparent-background-free-png.png" alt="Hotdog">
+      </button>
+    </div>
   
-    <button class="card1" (click)="selectCategory('pizza')">
-      <img  style="height: 80px;" src="https://static.vecteezy.com/system/resources/previews/028/900/505/original/pizza-icon-design-free-png.png" alt="df">
-    </button>
-    <button class="card2" (click)="selectCategory('burger')">
-      <img  style="height: 80px;" src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png" alt="df">
-    </button>
-  </div>
-  <div class="down">
-    <button class="card3" (click)="selectCategory('tacos')">
-      <img  style="height: 80px;" src="https://cdn-icons-png.flaticon.com/512/8512/8512378.png" alt="df">
-    </button>
-    <button class="card4" (click)="selectCategory('hotdog')">
-      <img  style="height: 80px;" src="https://cdn-icons-png.flaticon.com/512/1256/1256450.png" alt="df">
 
-    </button>
-  </div>
-</div>
 
-<div *ngFor="let category of selectedCategories">
-  <h2>{{ category }}</h2>
-  <div class="container">
-    <div *ngFor="let snack of snacks | filterByCategory: category" class="card">
-      <div class="imgBx">
-        <img [src]="snack.picture" alt="{{ snack.description }} Image">
-      </div>
-      <div class="contentBx">
-        <h2>{{ snack.description }}</h2>
-        <div class="size"></div>
-        <div class="color">
-          <h3>Price:</h3>
-          <span>${{ snack.price }}</span>
+  <!-- Affichage des snacks pour chaque catégorie sélectionnée -->
+  <div *ngFor="let category of selectedCategories">
+    <h2 class="h2">{{ category }} :</h2>
+    <div class="container">
+      <div class="container horizontal-scroll">
+        <!-- Affichage des snacks filtrés par catégorie -->
+        <div *ngFor="let snack of snacks | filterByCategory: category" class="card">
+          <div class="imgBx">
+            <!-- Image du snack -->
+            <img [src]="snack.picture" alt="{{ snack.description }} Image">
+          </div>
+          <div class="contentBx">
+            <!-- Description du snack -->
+            <h2>{{ snack.description }}</h2>
+            <div class="size"></div>
+            <div class="color">
+              <!-- Prix du snack -->
+              <h3>Price:</h3>
+              <span>${{ snack.price }}</span>
+            </div>
+            <!-- Bouton pour ajouter le snack à la commande -->
+            <button class="btn" (click)="addtoOrder(snack)"> Choose </button>
+          </div>
         </div>
-        <button class="btn" (click)="addtoOrder(snack)"> Choose </button>
       </div>
     </div>
   </div>

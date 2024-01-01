@@ -8,28 +8,52 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
-
+@font-face {
+  font-family: 'style';
+  src: url('../BIG\ BURGER.ttf') format('truetype');
+}
 @font-face {
   font-family: 'stylees';
   src: url('../YummyBurger.otf') format('truetype');
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-  margin: 90px;
-  gap: 50px;
-  margin-left: 240px;
+
+@font-face {
+  font-family: 'ss';
+  src: url('../Speeday-Bold-FFP.ttf') format('truetype');
 }
+
+
+.connt{
+  padding: 100px;
+  height: auto;
+    margin-top: -90px;
+  margin-top: -90px;
+  height: 920px;
+  background-size: cover;
+  margin-top: -86px;
+}
+
+
+.container {
+  padding: 60px;
+  display: flex;
+  flex-wrap: nowrap; /* Ensure that items don't wrap to the next line */
+  gap: 60px;
+  margin-top: -20px;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
 
 .container .card {
   cursor: pointer;
   position: relative;
-  width: 320px;
+  width: 370px;
   height: 490px;
-  background: #1d0227; /* Updated background color */
+  background: #ffed92; /* Updated background color */
   border-radius: 20px;
   overflow: hidden;
+  margin:10px 0px 50px;
 }
 
 .container .card:before {
@@ -39,7 +63,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ff9100;
+  background: #f8c6c6;
   clip-path: circle(150px at 80% 20%);
   transition: 0.3s ease-in-out;
 }
@@ -71,7 +95,7 @@
   z-index: 10000;
   width: 100%;
   height: 220px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .container .card:hover .imgBx {
@@ -84,7 +108,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-25deg);
-  width: 270px;
+  width: 240px;
 }
 
 .container .card .contentBx {
@@ -93,7 +117,7 @@
   width: 100%;
   height: 50px;
   text-align: center;
-  transition: 1s;
+  transition: 0.3s;
   z-index: 10;
 }
 
@@ -105,7 +129,7 @@
   position: relative;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #fff;
+  color: #000000;
   margin: 0;
 }
 
@@ -115,7 +139,7 @@
   justify-content: center;
   align-items: center;
   padding: 8px 20px;
-  transition: 0.3s;
+  transition: 0.2s;
   opacity: 0;
   visibility: hidden;
   padding-top: 0;
@@ -125,18 +149,18 @@
 .container .card:hover .contentBx .size {
   opacity: 1;
   visibility: visible;
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
 }
 
 .container .card:hover .contentBx .color {
   opacity: 1;
   visibility: visible;
-  transition-delay: 0.6s;
+  transition-delay: 0.2s;
 }
 
 .container .card .contentBx .size h3,
 .container .card .contentBx .color h3 {
-  color: #fff;
+  color: #000000;
   font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
@@ -152,7 +176,7 @@
   font-size: 14px;
   display: inline-block;
   color: #f50d0d;
-  background: #fff;
+  background: #ffffff;
   margin: 0 5px;
   transition: 0.5s;
   color: #111;
@@ -237,7 +261,7 @@
  }
  
  .btn:hover {
-  background-color: #ff7700;
+  background-color: #000000;
 
   
   color: rgb(255, 255, 255);
@@ -253,33 +277,31 @@
   transform: scale(0.9);
  }
 
- .main {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  margin-left: 500px;
-  margin-top: 90px;
-}
+
 
 .up {
   display: flex;
+    margin-top: -60px;
   flex-direction: row;
-  gap: 0.5em;
+  margin-bottom: 10px;
+  margin-left: 28vw;
+  gap: 1em;
 }
 
 .down {
   display: flex;
   flex-direction: row;
-  gap: 0.5em;
+  margin-left: 28vw;
+  gap: 1em;
 }
 
 .card1 {
-  width: 270px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
   outline: none;
+  background-image: linear-gradient(to left, #ffc30f 0%, #fee140 190%); 
   border: none;
-  background: rgb(2, 19, 52);
-  border-radius: 90px 5px 5px 5px;
+  border-radius: 250px 8px 8px 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
 }
@@ -291,29 +313,29 @@
 }
 
 .card2 {
-  width: 270px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(to left, #ffc30f 0%, #fee140 190%); 
   outline: none;
   border: none;
-  background: rgb(2, 19, 52);
-  border-radius: 5px 160px 5px 5px;
+  border-radius: 12px 250px 5px 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
 }
 
 .facebook {
-  margin-top: 1.5em;
+  marginrgb(0, 0, 0).5em;
   margin-left: -.9em;
   fill: #03A9F4;
 }
 
 .card3 {
-  width: 270px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
   outline: none;
   border: none;
-  background: rgb(2, 19, 52);
-  border-radius: 5px 5px 5px 160px;
+  background-image: linear-gradient(to left, #ffc30f 0%, #fee140 190%); 
+  border-radius: 12px 5px 5px 250px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
 }
@@ -321,16 +343,16 @@
 .whatsapp {
   margin-top: -.6em;
   margin-left: 1.2em;
-  fill: #00ff00;
+  fill: #000000;
 }
 
 .card4 {
-  width: 270px;
-  height: 270px;
+ width: 300px;
+  height: 300px;
   outline: none;
   border: none;
-  background: rgb(2, 19, 52);
-  border-radius: 5px 5px 160px 5px;
+  background-image: linear-gradient(to left, #ffc30f 0%, #fee140 190%); 
+   border-radius: 12px 5px 250px 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
 }
@@ -338,24 +360,22 @@
 .gmail {
   margin-top: -.9em;
   margin-left: -1.2em;
-  fill: #f14336;
+  fill: #000000;
 }
 
 .card1:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #8fcc39;
-}
+  background-image: linear-gradient( #eeff00 30%, #f07c00 90%); }
 
 .card1:hover .instagram {
-  fill: white;
+  fill: rgb(0, 0, 0);
 }
 
 .card2:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #18ebf2;
-}
+  background-image: linear-gradient( #eeff00 20%, #f07c00 90%);}
 
 .card2:hover .facebook {
   fill: white;
@@ -364,33 +384,119 @@
 .card3:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #00ff00;
-}
+  background-image: linear-gradient( to right,#eeff00 20%, #f07c00 90%);}
 
 .card3:hover .whatsapp {
-  fill: white;
+  fill: rgb(0, 0, 0);
 }
 
 .card4:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #FF0004;
-}
+  background-image: linear-gradient( to left,#eeff00 20%, #f07c00 90%);}
 
 .card4:hover .gmail {
-  fill: white;
+  fill: rgb(0, 0, 0);
+}
+.up .card1 img,
+.up .card2 img,
+.down .card3 img,
+.down .card4 img {
+  transition: transform 0.3s ease-in-out;
 }
 
-.connt{
-  padding: 100px;
-  background: linear-gradient(145deg, #f4ff7dd2, #c8ff00);
-  box-shadow:  41px 41px 82px #a3912d,
-               -41px -41px 82px #3dddbd;  margin-top: -90px;
+.up .card1:hover img {
+  transform: scale(1.1);
 }
+
+.up .card2:hover img {
+  transform: scale(1.1);
+}
+
+.down .card3:hover img {
+  transform: scale(1.1);
+}
+
+.down .card4:hover img {
+  transform: scale(1.1);
+}
+
 
 .h1{
-  font-size: 50px;
-  margin-bottom: 20px;
-  font-family: "stylees";
-  font-weight: 300;
+  font-size: 20px;
+  font-family:'stylee';
+  letter-spacing: 16px;
+  color: #a84e4e;
+  margin-top: 20px;
+  margin-bottom:10px;
+  margin-left: 16vw;  
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+
+}
+
+
+
+.h2{
+
+  font-size: 60px;
+  color: rgb(42, 10, 10);
+  font-family: "style";
+  margin-left: 0vw;
+  letter-spacing: 20px;
+  list-style:circle;
+}
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  margin: 0 -10px; /* Adjust margin as needed */
+  padding: 10px;   /* Adjust padding as needed */
+}
+
+
+/* Modify your existing .ordery styles */
+.ordery {
+  position: fixed;
+  top: 14vh; /* Adjust top value as needed */
+  right: 30px; /* Adjust right value as needed */
+  z-index: 1000;
+  background-color: #ffffff;
+  width: 370px;
+  padding: 20px;
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 20% 20% / 10% 0%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a class for styling .ordery-btn-container */
+.ordery-btn-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px; /* Adjust margin as needed */
+}
+
+/* Add a class for styling .ordery-btn */
+.ordery-btn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.main {
+  display: flex;
+  padding: 120px;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: -7vh;
+  background-image: linear-gradient(to bottom, #ffea00 2%, rgb(177, 95, 13) 60%);
 }
