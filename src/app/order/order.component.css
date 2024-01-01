@@ -1,0 +1,94 @@
+
+.btn {
+    padding: 10px ;
+    width: 130px;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #000000;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+    margin-bottom: 10px;
+    margin-left: 10vw;
+   }
+   
+   .btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff8205;
+      top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .btn:hover {
+    background-color: #ff7700;
+  
+    
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+
+   .btn:active {
+    transform: scale(0.9);
+   }
+
+   @font-face {
+    font-family: 'stylees';
+    src: url('../YummyBurger.otf') format('truetype');
+  }
+
+
+  @font-face {
+    font-family: 'stylees2';
+    src: url('../Bob\'s\ Burgers.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'stylees3';
+    src: url('../Via\ Appia.ttf') format('truetype');
+  }
+  
+
+.title{
+margin-top: 0vw;
+margin-left: 20vw;
+font-size: 30px;  
+letter-spacing: 5px;
+font-family: "stylees2";
+}
+.tit{
+  color:rgb(0, 0, 0);
+  font-family: "stylees3";
+  font-size: 1rem;
+}
+.cont{
+  border: solid rgb(247, 247, 247);
+  padding: 10px;
+  margin-top: 60px;
+  margin-left: 400px;
+  width: 50vw;
+  border-radius: 20px 10px;
+  background-color: #ffffff;
+}
+
+.container{
+  background-image: linear-gradient(to bottom, #070000 1%, #ff9100 4%);
+  padding: 100px;
+  height: 100vh;
+  margin-top: -64px;
+}

@@ -1,12 +1,33 @@
-<!-- order.component.html -->
-<div>
-  <h2>Order Details</h2>
+<div class="container">
+  <div class="cont"> <!-- Order Details Title -->
+  <h2 class="title">Order Details:</h2>
+
+  <!-- Display selected snacks using Angular ngFor -->
   <div *ngFor="let item of sharedService.selectedSnacks">
-    <div class="order-item">
-      <img  style="height: 20px;" [src]="item.picture" alt="{{ item.description }} Image">
-      <h1>{{ item.description }}</h1>
-      <h2>Price: ${{ item.price }}</h2>
+    <div>
+     
+        <!-- Snack Description -->
+        <h1 class="tit">{{ item.description }}</h1>
+
+        <!-- Snack Image -->
+        <img style="height: 50px;" [src]="item.picture" alt="{{ item.description }} Image">
+
+        <!-- Snack Price -->
+        <h2 class="tit">Price: ${{ item.price }}</h2>
+
+        <!-- Snack Quantity -->
+        <h2 class="tit">Quantity: {{ item.quantity }}</h2>
+
+        <!-- Increase and Decrease Quantity Buttons -->
+        <button class="qte" (click)="add(item)">+</button>
+        <button class="qte" (click)="reduce(item)">-</button>
+      </div>
     </div>
-  </div>
-  <button (click)="placeOrder()">Place Order</button>
+ 
+
+  <!-- Display total price of the order -->
+  <h3>Total: ${{ this.calculateTotal() }}</h3>
+
+  <!-- Button to place the order -->
+  <button class="btn" (click)="placeOrder()">Validate Order</button> </div>
 </div>

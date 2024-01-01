@@ -1,7 +1,9 @@
 <nav id="navbar">
+  <img [src]="'assets/logo.png'"  alt="Snacks" class="logo" >
+
   <ul>
     <li><a (click)="navigateTo('/home')">Home</a></li>
     <li><a (click)="navigateTo('/snacks')">Snacks</a></li>
-    <li><a (click)="navigateTo('/mycommands')">My Order</a></li>
+    <li><a (click)="navigateTo('/mycommands')" style="margin-left: 9px;">My Order</a></li>
   </ul>
 </nav>
