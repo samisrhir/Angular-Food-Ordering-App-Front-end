@@ -20,6 +20,19 @@ export class OrderComponent implements OnInit {
   // Initialize order with an empty array
   order: Order[] = [];
 
+  order: Order[] =[]; // Initialize order with default values
+  state: any = "Queued";
+
+  reduce(snack: Snack) {
+    if (snack.quantity > 1) {
+      snack.quantity--;
+    }
+  }
+
+  add(snack: Snack) {
+    snack.quantity++;
+  }
+
   // Default order state
   state: any = "Queued";
 
@@ -57,6 +70,14 @@ export class OrderComponent implements OnInit {
   }
 
   // Method to place an order
+    this.orderService.getOrders().subscribe(
+      (res: Order[]) => { 
+        this.order = res;
+        console.log(res);
+      }
+    );
+  }
+  
   placeOrder() {
     // Validate table number
     if (!this.tableNumber || this.tableNumber.trim() === '') {
@@ -70,6 +91,7 @@ export class OrderComponent implements OnInit {
       snacks: this.sharedService.selectedSnacks,
       state: this.state,
       tablenum: this.tableNumber
+      state: this.state
     };
 
     // Post the order data to the server
