@@ -326,7 +326,7 @@
 }
 
 .facebook {
-  marginrgb(0, 0, 0).5em;
+  margin: (0, 0, 0).5em;
   margin-left: -.9em;
   fill: #03A9F4;
 }
