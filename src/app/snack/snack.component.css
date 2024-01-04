@@ -430,14 +430,12 @@
   letter-spacing: 16px;
   color: #a84e4e;
   margin-top: 20px;
-  margin-bottom:10px;
   margin-left: 16vw;  
   font-size: 30px;
   font-family:'stylee';
   letter-spacing: 16px;
   color: #331d1d;
   margin-top: 70px;
-  margin-bottom:80px;
   margin-left: 10vw;
   animation: float 2s ease-in-out infinite;
 }

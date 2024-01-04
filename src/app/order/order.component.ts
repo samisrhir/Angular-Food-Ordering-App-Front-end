@@ -12,53 +12,17 @@ import { Snack } from '../Snack';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-  i!: number;
-  removeSnack(index: number) {
-    this.sharedService.selectedSnacks.splice(index, 1);
-  }
-  
-  // Initialize order with an empty array
-  order: Order[] = [];
-
-  order: Order[] =[]; // Initialize order with default values
+  order: Order[] = []; // Initialize order with default values
   state: any = "Queued";
-
-  reduce(snack: Snack) {
-    if (snack.quantity > 1) {
-      snack.quantity--;
-    }
-  }
-
-  add(snack: Snack) {
-    snack.quantity++;
-  }
-
-  // Default order state
-  state: any = "Queued";
-
-  // Variable to store table number
   tableNumber: any;
+i!: number;
 
-  // Method to reduce snack quantity
-  reduce(snack: Snack) {
-    if (snack.quantity > 1) {
-      snack.quantity--;
-    }
-  }
-
-  // Method to increase snack quantity
-  add(snack: Snack) {
-    snack.quantity++;
-  }
-
-  // Constructor with dependency injection
   constructor(
     public orderService: OrderService,
     public sharedService: SharedService,
     private http: HttpClient
   ) {}
 
-  // Lifecycle hook: ngOnInit
   ngOnInit(): void {
     // Fetch orders on component initialization
     this.orderService.getOrders().subscribe(
@@ -69,15 +33,20 @@ export class OrderComponent implements OnInit {
     );
   }
 
-  // Method to place an order
-    this.orderService.getOrders().subscribe(
-      (res: Order[]) => { 
-        this.order = res;
-        console.log(res);
-      }
-    );
+  removeSnack(index: number) {
+    this.sharedService.selectedSnacks.splice(index, 1);
   }
-  
+
+  reduce(snack: Snack) {
+    if (snack.quantity > 1) {
+      snack.quantity--;
+    }
+  }
+
+  add(snack: Snack) {
+    snack.quantity++;
+  }
+
   placeOrder() {
     // Validate table number
     if (!this.tableNumber || this.tableNumber.trim() === '') {
@@ -91,7 +60,6 @@ export class OrderComponent implements OnInit {
       snacks: this.sharedService.selectedSnacks,
       state: this.state,
       tablenum: this.tableNumber
-      state: this.state
     };
 
     // Post the order data to the server
@@ -107,9 +75,7 @@ export class OrderComponent implements OnInit {
       );
   }
 
-  // Method to calculate the total price of selected snacks
   calculateTotal(): number {
     return this.sharedService.selectedSnacks.reduce((total, snack) => total + snack.price * snack.quantity, 0);
   }
-
 }

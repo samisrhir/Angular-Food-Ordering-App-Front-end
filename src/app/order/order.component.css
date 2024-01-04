@@ -225,7 +225,7 @@ button {
   font-family:'stylee';
   letter-spacing: 5px;
   color: #2a292678;
-  margin-top:10px;
+  margin-top:0px;
   margin-left: 40px;
   animation: float 2s ease-in-out infinite;
 }
@@ -246,6 +246,7 @@ button {
   border-radius: 40px;
   display: flex;
   padding: 20px;
+margin-bottom: 10px;
   justify-content: space-around;
   align-items: center;
  }
