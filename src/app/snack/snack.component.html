@@ -1,42 +1,60 @@
-<!-- La classe "connt" semble être une faute de frappe, elle peut être changée en "content". -->
 <div class="content">
 
   <div class="main">
-    <!-- Titre de la section -->
-    <div class="h1">Which Categoryis your Favorite Snack?</div>
-    <div class="h1" style="margin-left: 600px;margin-bottom:100px ; font-size: 1em;letter-spacing: 10px;">Choose the snack from below </div>
+    <div class="description">
+      <h1 style="font-family: stylee;margin-left: 90px;">Hello Customer !</h1>
+      <div class="content">
+        <div class="carrd">
+          <h1>Hamburger <span>🍔</span></h1>
+          <p>Juicy beef patty topped with fresh lettuce, tomatoes, onions, and a special sauce, all nestled in a soft, toasted bun.</p>
+        </div>
+      
+        <div class="carrd">
+          <h1>Pizza <span>🍕</span></h1>
+          <p>A delightful medley of melted cheese, savory tomato sauce, and a variety of delicious toppings on a thin, crispy crust.</p>
+        </div>
+      
+        <div class="carrd">
+          <h1>Hotdog <span>🌭</span></h1>
+          <p>A classic favorite featuring a succulent sausage nestled in a soft bun, topped with mustard, ketchup, onions, and relish.</p>
+        </div>
+      
+        <div class="carrd">
+          <h1>Tacos <span>🌮</span></h1>
+          <p>Flavor-packed tacos with seasoned meat, fresh vegetables, and a zingy salsa, all wrapped in a warm tortilla.</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="sec" style="margin-top: -89vh; padding: 20px;">
+    <div class="h1">Which Category of snacks you like ?   </div>
+    <div class="h12">Choose the snack from the roulette </div>
 
-    <!-- Composant Angular responsable de la gestion des commandes -->
 
-    <!-- Section des catégories -->
     <div class="up">
-      <!-- Bouton pour sélectionner la catégorie "pizza" -->
       <button class="card1" (click)="selectCategory('Pizza')">
-        <img style="height: 180px;margin-left: 50px;margin-top: 30px;" src="https://static.vecteezy.com/system/resources/thumbnails/024/589/232/small/pizza-with-ai-generated-free-png.png" alt="Pizza">
+        <img style="height: 160px;margin-left: 50px;margin-top: 30px;" src="https://static.vecteezy.com/system/resources/thumbnails/024/589/232/small/pizza-with-ai-generated-free-png.png" alt="Pizza">
       </button>
 
-      <!-- Bouton pour sélectionner la catégorie "burger" -->
       <button class="card2" (click)="selectCategory('Burger')">
-        <img style="height: 260px;margin-left: -30px;margin-top: 30px;" src="https://png.pngtree.com/png-vector/20230417/ourmid/pngtree-food-toast-burger-png-image_6712843.png" alt="Burger">
+        <img style="height: 230px;margin-left: -30px;margin-top: 30px;" src="https://png.pngtree.com/png-vector/20230417/ourmid/pngtree-food-toast-burger-png-image_6712843.png" alt="Burger">
       </button>
     </div>
 
     <div class="down">
-      <!-- Bouton pour sélectionner la catégorie "tacos" -->
       <button class="card3" (click)="selectCategory('tacos')">
-        <img style="height: 260px;margin-left: 20px;margin-top: -20px;" src="https://png.pngtree.com/png-clipart/20230422/ourmid/pngtree-mexican-taco-crepes-with-lemon-sauce-psd-transparent-png-image_6720528.png" alt="Tacos">
+        <img style="height: 230px;margin-left: 20px;margin-top: -20px;" src="https://png.pngtree.com/png-clipart/20230422/ourmid/pngtree-mexican-taco-crepes-with-lemon-sauce-psd-transparent-png-image_6720528.png" alt="Tacos">
       </button>
 
-      <!-- Bouton pour sélectionner la catégorie "hotdog" -->
       <button class="card4" (click)="selectCategory('hotdog')">
-        <img style="height: 250px;margin-left: -10px;margin-top: -30px;" src="https://static.vecteezy.com/system/resources/previews/021/952/581/original/free-spicy-hot-dog-hot-dog-transparent-background-free-png.png" alt="Hotdog">
+        <img style="height: 220px;margin-left: -10px;margin-top: -30px;" src="https://static.vecteezy.com/system/resources/previews/021/952/581/original/free-spicy-hot-dog-hot-dog-transparent-background-free-png.png" alt="Hotdog">
       </button>
     </div>
-  
-
-
+ 
+</div>
+<div class="cont2">
   <!-- Affichage des snacks pour chaque catégorie sélectionnée -->
-  <div *ngFor="let category of selectedCategories">
+  <div class ="banner"  *ngFor="let category of selectedCategories">
     <h2 class="h2">{{ category }} :</h2>
     <div class="container">
       <div class="container horizontal-scroll">
@@ -55,12 +73,10 @@
               <h3>Price:</h3>
               <span>${{ snack.price }}</span>
             </div>
-            <!-- Bouton pour ajouter le snack à la commande -->
             <button class="btn" (click)="addtoOrder(snack)"> Choose </button>
           </div>
-        </div>
+        </div></div>
       </div>
     </div>
   </div>
-</div>
-</div>
+

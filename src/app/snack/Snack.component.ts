@@ -39,4 +39,7 @@ export class SnackComponent implements OnInit {
   addtoOrder(snack: Snack) {
     this.sharedService.addToOrder(snack);
   }
+
+
+  
 }

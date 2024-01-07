@@ -24,7 +24,7 @@
 
 
 .connt{
-  padding: 100px;
+  padding: 0px;
   height: auto;
     margin-top: -90px;
   margin-top: -90px;
@@ -35,13 +35,9 @@
 
 
 .container {
-  padding: 60px;
   display: flex;
-  flex-wrap: nowrap; /* Ensure that items don't wrap to the next line */
   gap: 60px;
-  margin-top: -20px;
   flex-direction: row;
-  margin-left: 10px;
 }
 
 
@@ -50,10 +46,10 @@
   position: relative;
   width: 370px;
   height: 490px;
-  background: #ffed92; /* Updated background color */
+  background: #ecd3b3;  /* Updated background color */
   border-radius: 20px;
   overflow: hidden;
-  margin:10px 0px 50px;
+  margin:10px 0px 0px;
 }
 
 .container .card:before {
@@ -63,7 +59,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #f8c6c6;
+  background: #b22a15  ;
   clip-path: circle(150px at 80% 20%);
   transition: 0.3s ease-in-out;
 }
@@ -281,11 +277,10 @@
 
 .up {
   display: flex;
-    margin-top: -60px;
+    margin-top: -120px;
   flex-direction: row;
   margin-bottom: 10px;
-  margin-left: 28vw;
-  margin-left: 25vw;
+  margin-left: 60vw;
   gap: 1em;
 }
 
@@ -293,13 +288,13 @@
   display: flex;
   flex-direction: row;
   margin-left: 28vw;
-  margin-left: 25vw;
+  margin-left: 60vw;
   gap: 1em;
 }
 
 .card1 {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 260px;
   outline: none;
   background-image: linear-gradient(to left, #ffc30f 0%, #fee140 190%); 
   border: none;
@@ -308,15 +303,10 @@
   transition: .2s ease-in-out;
 }
 
-.instagram {
-  margin-top: 1.5em;
-  margin-left: 1.2em;
-  fill: #cc39a4;
-}
 
 .card2 {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 260px;
   background-image: linear-gradient(to left, #ffc30f 0%, #fee140 190%); 
   outline: none;
   border: none;
@@ -325,15 +315,10 @@
   transition: .2s ease-in-out;
 }
 
-.facebook {
-  margin: (0, 0, 0).5em;
-  margin-left: -.9em;
-  fill: #03A9F4;
-}
 
 .card3 {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 260px;
   outline: none;
   border: none;
   background-image: linear-gradient(to left, #ffc30f 0%, #fee140 190%); 
@@ -342,15 +327,11 @@
   transition: .2s ease-in-out;
 }
 
-.whatsapp {
-  margin-top: -.6em;
-  margin-left: 1.2em;
-  fill: #000000;
-}
+
 
 .card4 {
- width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 260px;
   outline: none;
   border: none;
   background-image: linear-gradient(to left, #ffc30f 0%, #fee140 190%); 
@@ -359,52 +340,38 @@
   transition: .2s ease-in-out;
 }
 
-.gmail {
-  margin-top: -.9em;
-  margin-left: -1.2em;
-  fill: #000000;
-}
+
 
 .card1:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale: 1;
   background-image: linear-gradient( #eeff00 30%, #f07c00 90%); }
 
-.card1:hover .instagram {
-  fill: rgb(0, 0, 0);
-}
 
 .card2:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale: 1;
   background-image: linear-gradient( #eeff00 20%, #f07c00 90%);}
 
-.card2:hover .facebook {
-  fill: white;
-}
+
 
 .card3:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale: 1;
   background-image: linear-gradient( to right,#eeff00 20%, #f07c00 90%);}
 
-.card3:hover .whatsapp {
-  fill: rgb(0, 0, 0);
-}
+
 
 .card4:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale: 1;
   background-image: linear-gradient( to left,#eeff00 20%, #f07c00 90%);}
 
-.card4:hover .gmail {
-  fill: rgb(0, 0, 0);
-}
 .up .card1 img,
 .up .card2 img,
 .down .card3 img,
 .down .card4 img {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .up .card1:hover img {
@@ -425,29 +392,37 @@
 
 
 .h1{
-  font-size: 20px;
+  font-size: 29px;
   font-family:'stylee';
   letter-spacing: 16px;
-  color: #a84e4e;
-  margin-top: 20px;
-  margin-left: 16vw;  
+  margin-bottom: 10Px;
+  margin-left: 1030px;
+  color: #f03737;
+  margin-top: 80px;
   font-size: 30px;
+  padding: 0px;
   font-family:'stylee';
-  letter-spacing: 16px;
-  color: #331d1d;
-  margin-top: 70px;
-  margin-left: 10vw;
-  animation: float 2s ease-in-out infinite;
+  letter-spacing: 1px;
+  color: #000000;
+  animation: wave 5s ease-in-out infinite;
 }
 
-@keyframes float {
+.h12{
+  font-size: 16px;
+  font-family:'stylee';
+  letter-spacing: 13px;
+  margin-left: 1000px;
+ margin-bottom: 200px;
+ animation: wave 5s ease-in-out infinite;
+
+}
+@keyframes wave {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
-
 }
 
 
@@ -455,8 +430,8 @@
 .h2{
 
   font-size: 60px;
-  color: rgb(42, 10, 10);
-  font-family: "style";
+  color: rgb(193, 255, 79);
+  font-family: "stylees";
   margin-left: 0vw;
   letter-spacing: 20px;
   list-style:circle;
@@ -465,8 +440,9 @@
 .horizontal-scroll {
   display: flex;
   overflow-x: auto;
-  margin: 0 -10px; /* Adjust margin as needed */
-  padding: 10px;   /* Adjust padding as needed */
+  margin: 0 -10px; 
+  padding: 10px;  
+  
 }
 
 
@@ -499,12 +475,77 @@
 }
 
 
+
 .main {
+  background-image: url("wave.svg");
+  width: 100%;
+  height:890px;
+  padding: 0px;
+}
+
+  
+  
+
+
+
+
+
+.banner{
+ padding: 80px;
+
+  background-color: #f7870f;
+}
+
+.description{
+  width: 30VW;
+  margin-top: 0vh;
+  margin-left:10px ;
+  padding: 40px;
+  
+}
+
+.cont2 {
+  background-color: rgb(255, 255, 255);
+  flex-grow: 1; /* Take remaining vertical space */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+}
+
+/* Add this CSS to your styles.css or component-specific CSS file */
+
+.content {
   display: flex;
-  padding: 120px;
-  flex-direction: column;
-  gap: 0.5em;
-  margin-top: -7vh;
-  background-image: linear-gradient(to bottom, #ffea00 2%, rgb(177, 95, 13) 60%);
-  background-image: linear-gradient(to bottom, #070000 1%, #ff9100 4%);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.carrd {
+  background-color: #f9660a;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrd:hover {
+  transform: scale(1.05);
+}
+
+.carrd h1 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.carrd p {
+  font-size: 12px;
+  color: #110101;
+  line-height: 1.8;
+}
+
+.carrd img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
 }

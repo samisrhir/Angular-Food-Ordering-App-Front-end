@@ -89,10 +89,10 @@ font-family: "ss";
 }
 
 .container{
-  background-image: linear-gradient(to bottom, #ffea00 2%, rgb(177, 95, 13) 60%);
+  background-color: #ff7700;
   padding: 100px;
-  height: 100vh;
-  margin-top: -64px;
+  background-image: url('bg.svg');
+  height: 800px;
 }
 .input__container {
   width: 51.2vw;
@@ -102,6 +102,7 @@ font-family: "ss";
   margin-left: 21vw;
   background: rgba(255, 255, 255, 0.3);
   padding: 15px;
+  font-family: ss;
   border-radius: 20px;
   position: relative;
 }
@@ -116,8 +117,7 @@ font-family: "ss";
   z-index: -1;
   filter: blur(25px);
   border-radius: 20px;
-  background-color: #000000;
-  background-image: radial-gradient(at 47% 69%, hsla(17,62%,65%,1) 0px, transparent 50%),
+  background-image: radial-gradient(at 47% 69%, rgb(0, 0, 0) 0px, transparent 50%),
 radial-gradient(at 9% 32%, rgb(150, 230, 76) 0px, transparent 50%);
 }
 
@@ -144,11 +144,12 @@ radial-gradient(at 9% 32%, rgb(150, 230, 76) 0px, transparent 50%);
   border: none;
   text-align: center;
   outline: none;
-  font-size: 30Px;
+  font-size: 50Px;
   width: 300PX;
-  padding: 10px;
-  border: solid#ff7700;
-  font-family: ss;
+  padding: 0px;
+  border: solid#000000;
+  font-family: stylees2;
+  color: #ff8205;
   margin-left: 300PX;
   border-radius: 30px;
   background: rgb(255, 255, 255);
@@ -156,8 +157,10 @@ radial-gradient(at 9% 32%, rgb(150, 230, 76) 0px, transparent 50%);
 }
 
 .input:hover,.input:focus {
-  background: rgb(226, 179, 7);
+  background: #f9f9f9a4;
   color: #000000;
+  border: solid#ff0000;
+
 
 }
 
@@ -224,9 +227,8 @@ button {
   font-size: 20px;
   font-family:'stylee';
   letter-spacing: 5px;
-  color: #2a292678;
-  margin-top:0px;
-  margin-left: 40px;
+  margin-left: -50px;
+  color: #4d1623;
   animation: float 2s ease-in-out infinite;
 }
 
