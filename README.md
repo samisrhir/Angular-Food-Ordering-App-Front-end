@@ -1,27 +1,22 @@
-# Eatit
+![image](https://github.com/samisrhir/Front-End-Food-Ordering-App-Angular/assets/56563430/876c676c-6a2a-4664-bde2-dab26c83799b)OVERVIEW DE L’APPLICATION
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
 
-## Development server
+Le projet de commande de repas est une application qui permet aux clients de parcourir un menu de restaurant, de sélectionner des repas et de passer des commandes dans un restaurant. Le système doit gérer les commandes, les repas, et le suivi des stocks tout en offrant une expérience fluide et efficace.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Présentation Fonctionnelle :
 
-## Code scaffolding
+Client :
+Sélection de Repas : L'utilisateur peut parcourir le menu, consulter les détails des repas et ajouter des articles à son panier.
+Création de Commande : L'utilisateur peut créer une commande en sélectionnant plusieurs repas et spécifier des préférences si nécessaire.
+Gestion de Panier : La possibilité de visualiser, ajuster et supprimer des éléments du panier avant la confirmation de la commande.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Commande :
+Liste de Repas: Une commande est constituée d'une liste de repas sélectionnés par l'utilisateur.
+Prix Total: Chaque commande affiche le prix total basé sur les repas sélectionnés.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Repas:
+Détails du Repas :
+ Chaque repas a des détails tels que le nom, la description, le prix, etc.
+Stocks : Le système doit suivre les stocks de chaque repas pour éviter la commande d'articles épuisés.
+![image](https://github.com/samisrhir/Front-End-Food-Ordering-App-Angular/assets/56563430/36a881d2-a204-4a52-b9ae-aa067fd1a844)
