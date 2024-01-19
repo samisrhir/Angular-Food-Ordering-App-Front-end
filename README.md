@@ -29,7 +29,8 @@ Stocks:
 The system tracks stocks for each meal to avoid ordering items that are out of stock.
 Application Screenshots
 ![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/4eb94cdc-d062-420e-9a03-a66a97fd3c2f)
-Gant : ![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/d27fcaf2-247b-4310-b0c5-42c288994673)
+Gant : 
+![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/d27fcaf2-247b-4310-b0c5-42c288994673)
 
 Unit Testing (JUnit)
 Order Services
