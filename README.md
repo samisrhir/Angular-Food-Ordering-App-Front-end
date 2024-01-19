@@ -96,6 +96,10 @@ SonarQube pour améliorer la qualité globale de votre code Spring Boot(Back-end
 Optimisation et Correction du source code après les scans répétitifs.
 
 
+https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/9efadd2a-1e96-4aca-9b34-8e15cc0c059c
+
+
+
 
 
 
