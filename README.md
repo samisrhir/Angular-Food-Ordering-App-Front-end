@@ -5,7 +5,7 @@ Le projet de commande de repas est une application qui permet aux clients de par
 Présentation Fonctionnelle :
 
 Client :
-Sélection de Repas : L'utilisateur peut parcourir le menu, consulter les détails des repas et ajouter des articles à son panier.
+Sélection de Repas :L'utilisateur peut parcourir le menu, consulter les détails des repas et ajouter des articles à son panier.
 Création de Commande : L'utilisateur peut créer une commande en sélectionnant plusieurs repas et spécifier des préférences si nécessaire.
 Gestion de Panier : La possibilité de visualiser, ajuster et supprimer des éléments du panier avant la confirmation de la commande.
 
