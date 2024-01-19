@@ -1,99 +1,102 @@
+Food Ordering Application
+Overview
+The Food Ordering Application is designed to provide users with a seamless experience in browsing a restaurant menu, selecting meals, and placing orders. The system efficiently manages orders, meals, and stock tracking to ensure a smooth and effective user experience.
 
+Functional Presentation
+Client
+Meal Selection:
 
-Le projet de commande de repas est une application qui permet aux clients de parcourir un menu de restaurant, de sélectionner des repas et de passer des commandes dans un restaurant. Le système doit gérer les commandes, les repas, et le suivi des stocks tout en offrant une expérience fluide et efficace.
+Users can browse the menu, view meal details, and add items to their cart.
+Order Creation:
 
-Présentation Fonctionnelle :
+Users can create orders by selecting multiple meals and specifying preferences if needed.
+Cart Management:
 
-Client :
-Sélection de Repas :L'utilisateur peut parcourir le menu, consulter les détails des repas et ajouter des articles à son panier.
-Création de Commande : L'utilisateur peut créer une commande en sélectionnant plusieurs repas et spécifier des préférences si nécessaire.
-Gestion de Panier : La possibilité de visualiser, ajuster et supprimer des éléments du panier avant la confirmation de la commande.
+Users can view, adjust, and remove items from the cart before confirming the order.
+Order
+Meal List:
 
-Commande :
-Liste de Repas: Une commande est constituée d'une liste de repas sélectionnés par l'utilisateur.
-Prix Total: Chaque commande affiche le prix total basé sur les repas sélectionnés.
+Each order consists of a list of meals selected by the user.
+Total Price:
 
+Each order displays the total price based on the selected meals.
+Meal
+Meal Details:
 
-Repas:
-Détails du Repas :
- Chaque repas a des détails tels que le nom, la description, le prix, etc.
-Stocks : Le système doit suivre les stocks de chaque repas pour éviter la commande d'articles épuisés.
-![image](https://github.com/samisrhir/Front-End-Food-Ordering-App-Angular/assets/56563430/36a881d2-a204-4a52-b9ae-aa067fd1a844)
-TEST UNITAIRES: ( JUNIT TEST )
+Meals have details such as name, description, price, etc.
+Stocks:
 
-TEST DES SERVICES DE COMMANDES :
-Fonctions de test :
-Ces tests couvrent les opérations essentielles pour la gestion des commandes dans votre application Spring Boot, garantissant le bon fonctionnement des méthodes de service associées à la manipulation des commandes.
+The system tracks stocks for each meal to avoid ordering items that are out of stock.
+Application Screenshots
 
-Test GetAllCommandes :
-Description : Vérifie que la méthode getAllCommandes retourne la liste de toutes les commandes existantes avec les détails corrects tels que l'ID, le total et l'état.
+Unit Testing (JUnit)
+Order Services
+GetAllCommandes:
 
-Test GetCommandeById :
-Description : Vérifie que la méthode getCommandeById récupère une commande spécifique par son ID avec les détails corrects tels que le total et l'état.
+Verifies that the getAllCommandes method returns the list of all existing orders with correct details.
+GetCommandeById:
 
-Test UpdateCommande :
-Description : Vérifie que la méthode updateCommande met à jour les détails d'une commande existante, tels que le total et l'état, et retourne la commande mise à jour.
+Verifies that the getCommandeById method retrieves a specific order by its ID with correct details.
+UpdateCommande:
 
-Test DeleteCommande :
-Description : Vérifie que la méthode deleteCommande supprime une commande spécifique en appelant la méthode deleteById du référentiel.
+Verifies that the updateCommande method updates the details of an existing order and returns the updated order.
+DeleteCommande:
 
-Test CreateCommande :
-Description : Vérifie que la méthode createCommande crée une nouvelle commande avec les détails appropriés tels que l'ID, le total et l'état, et retourne la commande créée.
+Verifies that the deleteCommande method deletes a specific order by calling the deleteById method of the repository.
+CreateCommande:
 
-JUnit tests :
+Verifies that the createCommande method creates a new order with appropriate details and returns the created order.
+JUnit tests:
 
-
-
-![image](https://github.com/samisrhir/Front-End-Food-Ordering-App-Angular/assets/56563430/05083cd9-c74c-4e14-9c7b-195c459bb3cc)
-
-
+Order Services Tests
 
 Maven tests:
-![image](https://github.com/samisrhir/Front-End-Food-Ordering-App-Angular/assets/56563430/87deea17-21be-4492-8cb8-af2a451a1ae8)
 
+Maven Tests
 
+Product (Snack) Services
+GetAllSnacks:
 
-TEST DES SERVICES DE PRODUIT (SNACK) :
-Fonctions de test :
+Verifies that the getAllSnacks method returns the list of all existing snacks with correct details.
+SaveSnack:
 
-Test GetAllCommandes :
-Description : Vérifie que la méthode getAllCommandes retourne la liste de toutes les commandes existantes avec les détails corrects tels que l'ID, le total et l'état.
-Test SaveSnack :
-Description : Vérifie que la méthode save sauvegarde correctement un snack et retourne le snack sauvegardé avec les détails appropriés tels que l'ID, la catégorie et le prix.
-Test GetAllSnacks :
-Description : Vérifie que la méthode getAllSnacks récupère toutes les collations existantes depuis le référentiel avec les détails corrects tels que l'ID, la catégorie et le prix
-Test DeleteSnackById :
-Description : Vérifie que la méthode deleteSnackById supprime une collation spécifique en appelant la méthode deleteById du référentiel avec le bon ID.
-Test GetSnackById :
-Description : Vérifie que la méthode getSnackById récupère correctement une collation spécifique par son ID depuis le référentiel avec les détails appropriés tels que l'ID, la catégorie et le prix.
-JUnit tests :
+Verifies that the save method correctly saves a snack and returns the saved snack with appropriate details.
+GetSnackById:
 
-![image](https://github.com/samisrhir/Front-End-Food-Ordering-App-Angular/assets/56563430/ec3ccdbb-cb96-4593-a6b3-d49e937b2e5e)
+Verifies that the getSnackById method correctly retrieves a specific snack by its ID with appropriate details.
+DeleteSnackById:
 
- SELENIUM
+Verifies that the deleteSnackById method deletes a specific snack by calling the deleteById method of the repository with the correct ID.
+JUnit tests:
 
-![image](https://github.com/samisrhir/Front-End-Food-Ordering-App-Angular/assets/56563430/722b8ae0-47d8-49fe-bf26-7c95770ba751)
+Snack Services Tests
 
-Scénario de Test :
-L'objectif de ce test est de vérifier la fonctionnalité du processus de placement de commande sur notre plateforme. Le test implique une série d'actions imitant l'interaction d'un client avec le site pour sélectionner un plat, l'ajouter à la commande, choisit la quantité et placer la commande.
-Résultat du Test :
-Le test a été exécuté avec succès, et toutes les étapes spécifiées ont été réalisées sans rencontrer d'erreurs. L'alerte avec le message attendu a été confirmée avec succès.
+Selenium Tests
+Scenario:
 
+The test aims to verify the functionality of the order placement process on the platform. It involves a series of actions simulating user interaction with the site to select a dish, add it to the order, choose the quantity, and place the order.
+Result:
 
-Observations :
-Le site web a répondu conformément aux interactions de l'utilisateur.
-Le processus de placement de commande, y compris la navigation dans la sélection des produits et l'interaction avec les boutons, a fonctionné comme prévu.
-L'alerte confirmant le placement réussi de la commande a été affichée promptement.
+The test was executed successfully, and all specified steps were completed without encountering errors. The expected success message alert was confirmed.
+Observations:
 
+The website responded as expected to user interactions.
+The order placement process, including navigation in product selection and interaction with buttons, worked as intended.
+The alert confirming the successful placement of the order was displayed promptly.
+SonarQube Code Quality
+Project Configuration:
 
+Configure your project for SonarQube.
+Integration and Configuration:
 
-SonarQube pour améliorer la qualité globale de votre code Spring Boot(Back-end): 
-1-	Configuration du Projet ;
-2-	Intégration et Configuration ;
-3-	Exécution de Sonar Scanner ;
-4-	Rapports de Qualité du Code ;
+Integrate SonarQube into your project and configure it.
+Running Sonar Scanner:
 
-Optimisation et Correction du source code après les scans répétitifs.
+Execute Sonar Scanner to analyze your code.
+Code Quality Reports:
+
+View and interpret the code quality reports generated by SonarQube.
+Optimize and correct the source code based on repeated scans.
 
 
 https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/9efadd2a-1e96-4aca-9b34-8e15cc0c059c
@@ -107,3 +110,4 @@ https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430
 
 
 
+**
