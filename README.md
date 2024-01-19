@@ -1,4 +1,4 @@
-Food Ordering Application
+![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/c6ca8eb6-d66a-4528-9b36-d52d98f3b1cc)Food Ordering Application
 Overview
 The Food Ordering Application is designed to provide users with a seamless experience in browsing a restaurant menu, selecting meals, and placing orders. The system efficiently manages orders, meals, and stock tracking to ensure a smooth and effective user experience.
 
@@ -28,6 +28,8 @@ Stocks:
 
 The system tracks stocks for each meal to avoid ordering items that are out of stock.
 Application Screenshots
+![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/4eb94cdc-d062-420e-9a03-a66a97fd3c2f)
+Gant : ![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/d27fcaf2-247b-4310-b0c5-42c288994673)
 
 Unit Testing (JUnit)
 Order Services
@@ -47,12 +49,14 @@ CreateCommande:
 
 Verifies that the createCommande method creates a new order with appropriate details and returns the created order.
 JUnit tests:
+![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/aa5e0e4d-28d6-494f-9783-469b05cfa952)
 
 Order Services Tests
 
 Maven tests:
 
-Maven Tests
+![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/7cdc3e33-dcca-4244-81b2-392b7ed90b82)
+
 
 Product (Snack) Services
 GetAllSnacks:
