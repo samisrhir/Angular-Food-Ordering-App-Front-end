@@ -72,6 +72,7 @@ JUnit tests :
 
  SELENIUM
 
+![image](https://github.com/samisrhir/Front-End-Food-Ordering-App-Angular/assets/56563430/722b8ae0-47d8-49fe-bf26-7c95770ba751)
 
 Scénario de Test :
 L'objectif de ce test est de vérifier la fonctionnalité du processus de placement de commande sur notre plateforme. Le test implique une série d'actions imitant l'interaction d'un client avec le site pour sélectionner un plat, l'ajouter à la commande, choisit la quantité et placer la commande.
@@ -86,7 +87,7 @@ L'alerte confirmant le placement réussi de la commande a été affichée prompt
 
 
 
-	SonarQube pour améliorer la qualité globale de votre code Spring Boot(Back-end): 
+SonarQube pour améliorer la qualité globale de votre code Spring Boot(Back-end): 
 1-	Configuration du Projet ;
 2-	Intégration et Configuration ;
 3-	Exécution de Sonar Scanner ;
@@ -95,6 +96,7 @@ L'alerte confirmant le placement réussi de la commande a été affichée prompt
 Optimisation et Correction du source code après les scans répétitifs.
 
                                                                                                                                        
+![Uploading image.png…]()
 
 
 
