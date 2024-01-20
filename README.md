@@ -1,5 +1,4 @@
-![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/c6ca8eb6-d66a-4528-9b36-d52d98f3b1cc)Food Ordering Application
-Overview
+Food Ordering Application Overview
 The Food Ordering Application is designed to provide users with a seamless experience in browsing a restaurant menu, selecting meals, and placing orders. The system efficiently manages orders, meals, and stock tracking to ensure a smooth and effective user experience.
 
 Functional Presentation
