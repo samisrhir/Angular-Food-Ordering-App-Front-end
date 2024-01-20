@@ -1,4 +1,4 @@
-Food Ordering Application Overview
+![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/2f673e55-8244-4bbf-b80c-c0c9117caf31)Food Ordering Application Overview
 The Food Ordering Application is designed to provide users with a seamless experience in browsing a restaurant menu, selecting meals, and placing orders. The system efficiently manages orders, meals, and stock tracking to ensure a smooth and effective user experience.
 
 Functional Presentation
@@ -29,7 +29,7 @@ The system tracks stocks for each meal to avoid ordering items that are out of s
 Application Screenshots
 ![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/4eb94cdc-d062-420e-9a03-a66a97fd3c2f)
 Gant : 
-![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/d27fcaf2-247b-4310-b0c5-42c288994673)
+![image](https://github.com/samisrhir/Angular-Food-Ordering-App-Front-end/assets/56563430/5dddd098-db0b-452f-adcf-749d7a4495d5)
 
 Unit Testing (JUnit)
 Order Services
